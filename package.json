@@ -1,0 +1,19 @@
+{
+  "name": "scrape_news",
+  "version": "1.0.0",
+  "description": "Web app that scrapes the New York Times for new articles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jme919/Scrape_News.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jme919/Scrape_News/issues"
+  },
+  "homepage": "https://github.com/jme919/Scrape_News#readme"
+}
