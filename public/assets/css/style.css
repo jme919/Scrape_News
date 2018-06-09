@@ -1,0 +1,33 @@
+.navbar{
+	opacity: .6;
+	font-family: 'Righteous', cursive;
+
+}
+.hero{
+	opacity: 0.7;
+	margin-bottom: 40px;
+	text-decoration: underline;
+	font-family: 'Righteous', cursive;
+}
+
+.card{
+	opacity: 0.9;
+	background-color: #FFFFFF;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+span.icon.is-medium{
+	color: #B09E3C;
+}
+
+html, body{
+	background-image: url("../images/type.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	height: 100%;
+}
+
+/*font-family: 'IBM Plex Mono', monospace;
+/*font-family: 'Righteous', cursive;
