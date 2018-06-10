@@ -56,4 +56,10 @@ module.exports = function(router) {
         });
     });
 
+    router.patch("/api/headlines", function(req, res){
+        headlinesController.update(req.body, function(err, data){
+            res.json(data);
+        });
+    });
+
 }
