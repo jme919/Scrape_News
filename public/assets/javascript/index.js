@@ -26,7 +26,7 @@ $(document).ready(function(){
         //handles appending html containing article data to the page
         var articleCards = [];
         for(var i = 0; i< articles.length; i++){
-            articleCards.push(createCards(articles[i]);
+            articleCards.push(createCards(articles[i]));
         }
         articleContainer.append(articleCards);
     }
