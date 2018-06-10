@@ -2,8 +2,8 @@
 var scrape = require("../scripts/scrape");
 
 //bring in headlines and notes from the controller
-var headlinesController = require("..controllers/headlines");
-var notesController = require("../controllers.notes");
+var headlinesController = require("../controllers/headlines");
+var notesController = require("../controllers/notes");
 
 
 

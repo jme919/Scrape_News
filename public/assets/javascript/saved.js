@@ -9,7 +9,7 @@ $(document).ready(function(){
     initPage();
 
     function initPage(){
-        articleContainer.empty(;
+        articleContainer.empty()
         $.get("/api/headlines?saved=true").then(function(data){
             if(data && data.length){
                 renderArticles(data);
@@ -107,7 +107,7 @@ $(document).ready(function(){
     }
 
     function handleArticleDelete(){
-        var articleToDelete = $(this).parents(.card).data();
+        var articleToDelete = $(this).parents(".card").data();
         $ajax({
             method: "DELETE",
             url: "/api/headlines/" + articleToDelete._id
