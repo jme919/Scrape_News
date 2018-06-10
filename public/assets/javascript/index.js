@@ -26,7 +26,7 @@ $(document).ready(function(){
         //handles appending html containing article data to the page
         var articleCards = [];
         for(var i = 0; i< articles.length; i++){
-            articleCards.push(articles[i]);
+            articleCards.push(createCards(articles[i]);
         }
         articleContainer.append(articleCards);
     }
@@ -77,6 +77,31 @@ $(document).ready(function(){
                 "</div>",
                 "</div>"
 
-        ])
+        ].join(""));
+        articleContainer.append(emptyAlert);
     }
-})
+
+    function handleArticleSave(){
+        var articleToSave = $(this).parents(".card").data();
+        articleToSave.saved = true;
+
+        $ajax({
+            method: "PATCH",
+            url: "/api/headlines",
+            data: articleToSave
+        })
+        .then(function(data){
+            if(data.ok){
+                initPage();
+            }
+        });
+    }
+
+    function handleArticleScrape(){
+        $.get("/api/fetch")
+         .then(function(data){
+            initPage();
+            bootbox.alert("<h3 class= 'text-is-centered'>" + data.message + "</h3");
+        });
+    }
+});
